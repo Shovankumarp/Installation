@@ -28,10 +28,27 @@ Steps for CUDA installation:
 	
 	e.  
 
-   
+ 3. Installation methods:
+	There are two ways of installing cuda:
+		a. Distribution-specific packages (RPM and Deb packages) (Recommended to use)
+		b. distribution-independent package (runfile packages)
+    
+4. Downloading and installing NVIDIA CUDA toolkit (Deb Packages):
+	Link to download: https://developer.nvidia.com/cuda-downloads
+	
+	Linux -> x86_64 -> Ubuntu -> 18.04 -> deb(local)
+	
+	a. wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+	b. sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+	c. wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda-repo-ubuntu1804-11-0-local_11.0.3-450.51.06-1_amd64.deb
+	d. sudo dpkg -i cuda-repo-ubuntu1804-11-0-local_11.0.3-450.51.06-1_amd64.deb
+	e. sudo apt-key add /var/cuda-repo-ubuntu1804-11-0-local/7fa2af80.pub
+	f. sudo apt-get updatesudo apt-get -y install cuda
 
+5. Post Installationg actions :
 
-
+6. Uninstalling CUDA [If you want to remove a previous installation]
+	 
 Take away: 
 
 
