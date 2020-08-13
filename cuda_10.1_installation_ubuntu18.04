@@ -1,0 +1,41 @@
+Steps for CUDA installation:
+
+1. Requirements to install CUDA in your system:
+
+	
+    a. CUDA-capable GPU
+    b. A supported version of Linux with a gcc compiler and toolchain
+    c. NVIDIA CUDA Toolkit (available at https://developer.nvidia.com/cuda-downloads)
+
+2. Pre-installation Actions
+	a. Verify the system has a CUDA-capable GPU
+		
+	   $ lspci | grep -i nvidia
+	My output:
+	01:00.0 VGA compatible controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Ti Mobile] (rev a1)
+	01:00.1 Audio device: NVIDIA Corporation GP107GL High Definition Audio Controller (rev a1)
+	
+	b.  Verify You Have a Supported Version of Linux
+	   
+	   $ uname -m && cat /etc/*release
+	
+	c.  Verify the System Has gcc Installed
+
+	d.  Verify the System has the Correct Kernel Headers and Development Packages Installed
+	   $ uname -r
+	My Output:
+	5.4.0-42-generic
+	
+	e.  
+
+   
+
+
+
+Take away: 
+
+
+Reference:
+
+[1] https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+
