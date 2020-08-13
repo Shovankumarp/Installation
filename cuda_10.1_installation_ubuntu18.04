@@ -47,6 +47,19 @@ Steps for CUDA installation:
 
 5. Post Installationg actions :
 
+	a. Mandatory actions -> Environment Setup
+		add this to the PATH variable:
+		$ export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
+	   
+	
+	b. Recommended actions -> Verification of the installations
+		1. To verify the driver version execute the command:
+		   $ cat /proc/driver/nvidia/version
+		2. To check the version of the CUDA Toolkit 
+		   $ nvcc -V
+	
+	
+
 6. Uninstalling CUDA [If you want to remove a previous installation]
 	 
 Take away: 
